@@ -31,9 +31,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 import Foundation
 import ResearchKit
 
-@objc class TaskFactory : NSObject {
+public extension TaskFactory {
 
-    class func makeNavigableOrderedTask(_ taskIdentifier : String) -> ORKNavigableOrderedTask {
+    public func makeNavigableOrderedTask(_ taskIdentifier : String) -> ORKNavigableOrderedTask {
         var steps: [ORKStep] = []
         var answerFormat: ORKAnswerFormat
         var step: ORKStep
